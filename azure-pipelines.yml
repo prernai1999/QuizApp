@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  default
+  windows-latest
 
 steps:
 - task: NodeTool@0
