@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'  # Microsoft-hosted agen
+  vmImage: 'ubuntu-latest'  # Microsoft-hosted agent
 
 steps:
 - task: NodeTool@0
