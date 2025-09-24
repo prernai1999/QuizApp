@@ -31,3 +31,10 @@ steps:
       PathtoPublish: '$(Build.ArtifactStagingDirectory)'
       ArtifactName: 'QuizApp'
       publishLocation: 'Container'
+
+  - task: SonarCloudPrepare@3
+    inputs:
+      SonarQube: 'sonar sp'
+      organization: 'preranai'
+      scannerMode: 'dotnet'
+      projectKey: 'test'
